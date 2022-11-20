@@ -204,9 +204,9 @@ Now open http://localhost:3000 to see what it looks like:
 ![ReactJS welcome page](https://paper-attachments.dropbox.com/s_C282017B76413307FCCBDDD7202E167D00421CECBAFC87B8C619F533D86E5E23_1557331637345_Screen+Shot+2019-05-08+at+5.07.06+PM.png)
 
 Let's change the page:
-* Use __Atom__ to open `my-app/``
-* Edit `src/App.js`, save
-* The site should automatically refresh
+* Use __Atom__ to open `my-app/`.
+* Edit `src/App.js`, save.
+* The site should automatically refresh.
 
 Let's add a new component called __Title__ to the page
 
@@ -275,4 +275,4 @@ This part goes to the end of the `<body>`.
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 ```
 
-Back to http://localhost:3000 and see result. 
+Back to http://localhost:3000 and see result.
