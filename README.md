@@ -32,18 +32,20 @@ This is a 5-day course with a term group project and will be focusing on ReactJS
 
 ## About this Repo
 
+#### URL: https://github.com/alexwu77/web_programming
+
 * Each day's material will be posted in its folder before the class starts.
 * Inside each day folder:
 	* README.md: the class material.
 	* Sample code
 
 
-## PSA
+## Gudelines
 
-Please follow these bullet points to keep the course experience smooth for everyone:
+Please follow these guidelines to keep the course experience smooth for everyone:
 * Raise your hand for questions at anytime.
 	* But do it in such a way that it wont be disruptive.
-* If need to talk / answer phone, keep the volume down and do not disrupt others (and me!)
-* Feel free to ask me questions after classes conclude.
+* If need to talk / answer phones, keep the volume down and do not disrupt others (and me!)
+* Feel free to approach for more Q&A after class concludes.
 * If you feel the course is of little use to you, feel free to do whatever you need to do.
  	* Again, do it in such a way that it wont be disruptive.

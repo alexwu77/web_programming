@@ -2,11 +2,11 @@
 
 ## Why ReactJS?
 
-### What to expect working in a tech firm as a programmer?
+### Good Coding Principles
 
 #### Write as little lines of code as possible.
 
-* __Aggressively__ find open source projects that can help you (and company approves).
+* __Aggressively__ find open source projects so you write less code.
 * Stackoverflow (https://stackoverflow.com/) is your friend. Find your answers there.
 
 #### Write readable code.
@@ -33,8 +33,7 @@ main(m1,s) char *s; {
 
 Also:
 * Follow best practices for the language you choose.
-* Have well established execution flow.
-* Easy to follow logic.
+* Have well established execution flow and easy to follow logic.
 * Add comments to explain your intention if it's not clear from reading the code.
 
 #### Write easy to run / maintain code.
@@ -45,7 +44,7 @@ Also:
 * Executing the code is straightforward.
 * Well documented.
 
-### Adopting a well-established framework
+### Adopting Frameworks
 
 #### What is a framework in programming?
 
@@ -126,6 +125,12 @@ In other words, you get the benefits of the framework that quite match what we d
 
 ### Prerequisites
 
+#### Install Node.js
+
+* For Mac user with Homebrew: `brew install node`
+	* Homebrew is great: `brew install mysql`
+* For everyone else: https://nodejs.org/en/download/
+
 ```
 # Node.js
 
@@ -139,10 +144,12 @@ $ npx -v
 9.1.1
 ```
 
-Some background about __Node.js__:
+About __Node.js__:
 > Node.js is an open-source server environment. Node.js is cross-platform and runs on Windows, Linux, Unix, and macOS. Node.js is a back-end JavaScript runtime environment.
 
-> npm (originally short for Node Package Manager)[4] is a package manager (probably the most comprehensive and complete) for the JavaScript programming language maintained by npm, Inc. npx is npm's package runner.
+> npm (originally short for Node Package Manager) is a package manager (probably the most comprehensive and complete) for the JavaScript programming language maintained by npm, Inc. npx is npm's package runner.
+
+Example: `npm install firebase`
 
 If you are developing web applications, you must learn npm! It is the single most powerful JS package manager that contain almost every open source JS library.
 
