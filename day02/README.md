@@ -2,6 +2,17 @@
 
 ## ReactJS Basics
 
+### Project Structure
+
+* `public/`
+	* `public/index.html`
+* `src/`
+	* `src/index.js`
+	* `src/App.js` and `src/App.css`
+* `node_modules/`
+* `package.json`
+
+
 ### JSX
 Example: `const element = <h1>Hello, world!</h1>;`
 
@@ -35,7 +46,7 @@ class Welcome extends React.Component {
 
 The `props`: `const element = <Welcome name="Sara" />;`
 
-Composing components:
+Composing components with `props`
 ```
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
@@ -52,7 +63,7 @@ function App() {
 }
 ```
 
-Note: `props` are read-only. To store a component's state, use `state`.
+Note: `props` are read-only. To maintain and change a component's internal state, use `state`.
 
 
 ## A Game of Tic-Tac-Toe
