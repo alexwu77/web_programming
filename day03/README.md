@@ -55,7 +55,7 @@ A `<Link>` is an element that lets the user navigate to another page by clicking
 
 ### Params
 
-Like https://twitter.com/alexwu
+Example: https://twitter.com/alexwu
 
 Add import of `useParams`
 
@@ -66,6 +66,8 @@ Add import of `useParams`
 ```
 
 ### Search Params
+
+Example: https://www.google.com/search?q=taipei
 
 ```
 let [searchParams, setSearchParams] = useSearchParams();
