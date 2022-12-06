@@ -80,7 +80,7 @@ In the `Game` component:
  ```
  <CountdownCircleTimer
 	isPlaying
-	duration={10}
+	duration={20}
 	colors={['#004777', '#F7B801', '#A30000', '#A30000']}
 	colorsTime={[7, 5, 2, 0]}
 	key={this.state.timerKey}
