@@ -6,15 +6,15 @@ Your application should contain at least two landing pages, Home and Search.
 
 Your Home should look like:
 
-![home](https://github.com/alexwu77/web_programming/raw/main/day04/lab_home.png)
+![home](https://github.com/alexwu77/web_programming/raw/main/day03/lab_home.png)
 
 Your Search should look like:
 
-![search](https://github.com/alexwu77/web_programming/raw/main/day04/lab_search.png)
+![search](https://github.com/alexwu77/web_programming/raw/main/day03/lab_search.png)
 
 On the Search page, once the user enters a search term in the input box and clicks `Submit`, the page should navigate back to itself (which is the Search page) but should show the search term the user entered previously.
 
-![search](https://github.com/alexwu77/web_programming/raw/main/day04/lab_search_result.png)
+![search](https://github.com/alexwu77/web_programming/raw/main/day03/lab_search_result.png)
 
 Furthermore, the url in the browser should look something like: `http://localhost:3000/search?q=abcdefg`
 
