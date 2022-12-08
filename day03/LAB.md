@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-	     {/* ... */}
+        {/* ... */}
       </Routes>
     </div>
   );
@@ -38,7 +38,7 @@ function App() {
 function Layout() {
   return (
     <div>
-	   {/* ... */}
+      {/* ... */}
     </div>
   );
 }
@@ -72,14 +72,14 @@ function Search() {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-	  navigate('/search')
+    navigate('/search')
   };
 
   return (
-	  <div>
-       <h2>Your search term: {/* ... */}</h2>
-       <form onSubmit={/* ... */}>
-		   {/* ... */}
+    <div>
+      <h2>Your search term: {/* ... */}</h2>
+      <form onSubmit={/* ... */}>
+        {/* ... */}
       </form>
      </div>
   );
