@@ -6,9 +6,9 @@
 root.render(
   <React.StrictMode>
     <ProSidebarProvider>
-	   <BrowserRouter>
+      <BrowserRouter>
         <App />
-		</BrowserRouter>
+      </BrowserRouter>
     </ProSidebarProvider>
   </React.StrictMode>
 );
@@ -23,7 +23,7 @@ function Search() {
   // const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-	  // navigate('/search')
+    // navigate('/search')
   };
 
   return (
@@ -34,7 +34,7 @@ function Search() {
           Search:
           <input name="q" />
         </label>
-		  <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
      </form>
     </div>
   );
@@ -136,25 +136,25 @@ function Post() {
   const [post, setPost] = useState();
 
   const handleChange = (e) => {
-	  const {name , value} = e.target;
-	  if (name == 'post') {
-		  setPost(value)
-	  }
+    const {name , value} = e.target;
+    if (name == 'post') {
+      setPost(value)
+    }
   }
 
   const handleSubmit = (e) => {
     let obj = {
       post : post,
-	 }
+    }
 
-	 // Create a unique key for new posts
+    // Create a unique key for new posts
     const newPostKey = push(child(ref(database), 'posts')).key;
-	 const updates = {};
-	 updates['/posts/' + newPostKey] = obj;
-	 update(ref(database), updates);
+    const updates = {};
+    updates['/posts/' + newPostKey] = obj;
+    update(ref(database), updates);
 
-	 // To prevent the page from reloading; very useful for debugging
-	 e.preventDefault()
+    // To prevent the page from reloading; very useful for debugging
+    e.preventDefault()
   };
 
   return (
@@ -165,7 +165,7 @@ function Post() {
           Search:
           <input name="post" onChange={handleChange}/>
         </label>
-		  <input type="submit" value="Post!" />
+        <input type="submit" value="Post!" />
      </form>
     </div>
   );
