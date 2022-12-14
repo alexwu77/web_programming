@@ -171,3 +171,5 @@ function Post() {
   );
 }
 ```
+
+Sample code in https://github.com/alexwu77/web_programming/blob/main/day04/firebase/src/App.js
