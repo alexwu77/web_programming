@@ -83,11 +83,13 @@ In your project directory:
 
 Run: `firebase login`
 
-Run: `firebase init`: use the Up/Down arrow keys and space to select these three:
+Run: `firebase init`: use the Up/Down arrow keys and space to select these two:
 * Realtime Database: Configure a security rules file for Realtime Database and (optionally) provision default instance]
 * Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
 
-Follow on screen instructions to finish. Remember to use `build` as your public folder, and not the default `public`.
+Select `Use an existing application`, and select the project you just created.
+
+Follow on screen instructions to finish using all the default values until the `=== Hosting Setup` section. Remember to use `build` as your public folder, and not the default `public`.
 
 ```
 === Hosting Setup
@@ -99,8 +101,6 @@ have a build process for your assets, use your build's output directory.
 ? What do you want to use as your public directory? build
 ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
 ? Set up automatic builds and deploys with GitHub? No
-? File public/index.html already exists. Overwrite? No
-i  Skipping write of public/index.html
 ```
 
 In your project dictory:
