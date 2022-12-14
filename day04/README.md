@@ -75,7 +75,7 @@ Enter App name -> check `Also set up Firebase Hosting for this app.` -> `Registe
 
 In your project directory: `npm install firebase`
 
-Copy / paste the code snippet in the console to your notebook; you will need it later. If you forget, you can always go to Firebase console and retrieve the code.
+DO NOT copy the code snippet. You will retrieve the code later.
 
 Run: `npm install -g firebase-tools` (can run it anywhere)
 
@@ -118,7 +118,7 @@ Create a Realtime Database at: https://console.firebase.google.com/u/0/project/n
 
 Then, go to Rules and edit the timestamps so it does not expire.
 
-Copy paste the firebase code snippet into `src/firebase.js` . You can retrieve the code snippet from Settings.
+Now retrieve the firebase code snippet from Settings: `Project Overview` -> `1 app` -> The gear icon -> scroll down. Copy the content to a new file `src/firebase.js`.
 
 Then in the same file `src/firebase.js`, add:
 
@@ -173,3 +173,14 @@ function Post() {
 ```
 
 Sample code in https://github.com/alexwu77/web_programming/blob/main/day04/firebase/src/App.js
+
+Note: if you got permission denied when posting, check the Database -> Rules and make sure it looks something like this:
+
+```
+{
+  "rules": {
+    ".read": "now < 2673539200000",  // 2023-1-13
+    ".write": "now < 2673539200000",  // 2023-1-13
+  }
+}
+```
