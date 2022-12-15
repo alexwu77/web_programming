@@ -174,13 +174,16 @@ function Post() {
 
 Sample code in https://github.com/alexwu77/web_programming/blob/main/day04/firebase/src/App.js
 
-Note: if you got permission denied when posting, check the Database -> Rules and make sure it looks something like this:
+Note: if you got permission denied when posting, please use the following rules to replace the existing rules in TWO places:
+
+* In the firebase console, check the Database -> Rules:
+* Under your project folder, edit `database.rules.json`:
 
 ```
 {
   "rules": {
-    ".read": "now < 2673539200000",  // 2023-1-13
-    ".write": "now < 2673539200000",  // 2023-1-13
+    ".read": true,
+    ".write": true
   }
 }
 ```
