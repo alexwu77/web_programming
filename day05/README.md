@@ -98,6 +98,7 @@ Your project should have the following components:
     * Bonus: user reviews and ratings
   * Use interaction - user can interact with the item in the detail list. The item could be a product, a blog post, a flight ticket, and will require different interaction.
   * Result / history page - the user can see the result of their prior interaction in a result / history page. This could be a shopping cart, a bookmark collection etc. There could be one or more results. User should be allowed to manage their results (e.g. remove an item from the shopping cart, deleting a bookmark)
+  * Bonus: any other features you can think of that will improve UX.
 * An admin application to:
   * Protected by admin passwords
   * Add / delete items. An item should have:
@@ -118,7 +119,7 @@ A typical example will be a shopping website (Amazon.com). Other example includi
 Your project will be scored based on the following:
 * Meets all the Requirements
 * Bonuses
-* User experience
+* User experience (UX)
 * Originality and creativity
 * Look and feel
 
