@@ -67,6 +67,26 @@ A: It's all about responsiveness.
 
 Consider a blocking call: `fetch()` -> `wait 5 secs` -> `show result when ready` vs a non-blocking call: `fetch()` -> `immediately return a ref object` -> `user can still interact with UI while the request is being processed by the server` -> `show result when ready`
 
+More info: [Blocking vs Non-blocking](https://www.freecodecamp.org/news/node-js-what-when-where-why-how-ab8424886e2/#:~:text=Blocking%20refers%20to%20operations%20that,a%20non%2DJavaScript%20operation%20completes)
+
+Consider these two examples:
+
+```
+// Sync
+const fs = require('fs');
+const data = fs.readFileSync('/file.md'); // blocks here until file is read
+console.log(data);
+moreWork(); // will run after console.log
+
+// Async
+const fs = require('fs');
+fs.readFile('/file.md', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+moreWork(); // will run before console.log
+```
+
 Q: Why push both key and value in `newPosts.push({k, p})`?
 
 A: So the ListItem can have a unique `key` property.
@@ -81,7 +101,7 @@ For the final term project, we want you to combine everything you have learned i
 
 ### Mission statement
 
-You are a team of expert web programmer, and you are hired by a corporation to work on a consumer facing project. The requirements are as followed. Your goal is to use your team work, originality creativity to design a fully-functional product with the upmost user experience in mind.
+You are a team of expert web programmer, and you are hired by a corporation to work on a consumer facing project. The requirements are as followed. Your goal is to use your team work, originality and creativity to design a fully-functional product with the upmost user experience in mind.
 
 ### Requirements (subject to change)
 
@@ -103,6 +123,7 @@ Your project should have the following components:
   * Protected by admin passwords
   * Add / delete items. An item should have:
     * Images
+      * Bonus: can upload images
     * Title
     * Description
     * Inventory (if applicable)
@@ -127,7 +148,9 @@ Your project will be scored based on the following:
 
 https://firebase.google.com/docs/storage/web/start
 
-Dont forget to edit your Rules!
+Don't forget to edit your Rules!
+
+To upload filse: https://firebase.google.com/docs/storage/web/upload-files
 
 ## Prettify Your application
 
@@ -135,11 +158,13 @@ Your website needs professional look and feel. Help is on the way.
 
 ### Bootstrap JS
 
-https://react-bootstrap.github.io/
+* Official site: https://react-bootstrap.github.io/
+* Example: https://getbootstrap.com/docs/4.0/examples/
 
 ### Materialized UI
 
-https://mui.com/
+* Official site: https://mui.com/
+* Example: https://mui.com/material-ui/getting-started/templates/
 
 ### Free react templates
 
@@ -153,5 +178,12 @@ Or, some resources to consider:
 ### Other styling components you can find...
 
 ## Q&A and Feedback
+
+Ask away!
+
+## To Conclude:
+
+Let's go back in time to day01 and review these good practices: https://github.com/alexwu77/web_programming/tree/main/day01#good-coding-principles
+
 
 # Thank You!!
